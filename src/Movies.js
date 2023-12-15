@@ -5,9 +5,9 @@ const url =
   "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
 
 const Movies = () => {
-  const { movies, loading } = useGlobalContext();
+  const { movies, isLoading } = useGlobalContext();
 
-  if (loading) {
+  if (isLoading) {
     return <div className="loading"></div>;
   }
   return (
